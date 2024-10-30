@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MQTT Dust Monitoring - Halloween Theme</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>
+            <img src="pumpkin.webp" alt="pumpkin" class="icon"> การตรวจสอบคุณภาพอากาศ 
+            <img src="bat.webp" alt="bat" class="icon">
+        </h1>
+        <div class="card">
+            <h2>ค่าฝุ่น PM2.5</h2>
+            <div id="dustValue" class="dust-value">0 µg/m³</div>
+            <div class="status" id="status">สถานะ: รอการอัปเดต...</div>
+            <input type="text" id="entryName" placeholder="ตั้งชื่อบันทึก">
+            <button id="saveBtn">บันทึก</button>
+            <div id="popup" class="popup">บันทึกเสร็จสิ้น!</div>
+        </div>
+        <div id="log" class="log"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
